@@ -6,10 +6,16 @@
   "private": true,
   "main": "rtc.js",
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "next": "^10.2.3",
     "node-static": "^0.7.11",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "socket.io": "^2.3.0",
     "socket.io-client": "^2.3.0"
   }
