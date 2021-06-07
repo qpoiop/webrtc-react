@@ -1,5 +1,5 @@
-const Mypage = (user) => {
-
+function Mypage(user) {
+  return
 }
 
 export default Mypage
