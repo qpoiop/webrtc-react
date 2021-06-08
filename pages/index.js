@@ -1,15 +1,25 @@
+import { useEffect, useState } from 'react'
+import { useSession } from 'next-auth/client'
 import Layout from '@/components/layout'
-import Head from 'next/head'
 
-export default function Index ({ isLogin }) {
+export default function Index () {
+  const [ session, loading ] = useSession()
+  const [ content, setContent ] = useState()
+
+  // this hook correspond to lifecycle 
+  // express componentDidMount, componentDidUpdate and componentWillUnmount instead
+  useEffect(() => {
+    
+  })
+
+  if (typeof window !== 'undefined' && loading) return null
+  if (!session) {
+    
+  }
+
   return (
-    <>
-      <Layout>
-        <Head>
-          <title> react proj with next.js for webRtc </title>
-        </Head>
+    <Layout>
 
-      </Layout>
-    </>
+    </Layout>
   )
 }

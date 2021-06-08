@@ -8,7 +8,7 @@ export default function Layout({ body }) {
       <Meta />
       <div className="main_container">
         <Header />
-        <main>{body}</main>
+        <main> { body } </main>
         <Footer />
       </div>
     </>
